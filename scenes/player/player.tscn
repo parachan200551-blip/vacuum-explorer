@@ -1,0 +1,22 @@
+[gd_scene format=3 uid="uid://beum7pvjsblq7"]
+
+[ext_resource type="Texture2D" uid="uid://bo8eqdediefab" path="res://art/placeholder/player.png" id="1_dovo2"]
+[ext_resource type="Texture2D" uid="uid://33jmlwg8mb4m" path="res://art/placeholder/nozzle.png" id="2_gmlin"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_7ujou"]
+radius = 12.0
+
+[node name="Player" type="CharacterBody2D" unique_id=868537756]
+motion_mode = 1
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=278096384]
+texture = ExtResource("1_dovo2")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1207814051]
+shape = SubResource("CircleShape2D_7ujou")
+
+[node name="Nozzle" type="Node2D" parent="." unique_id=1787988036]
+
+[node name="Sprite2D" type="Sprite2D" parent="Nozzle" unique_id=1999388820]
+position = Vector2(14, 0)
+texture = ExtResource("2_gmlin")
